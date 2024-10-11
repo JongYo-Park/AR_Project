@@ -1264,7 +1264,7 @@ MonoBehaviour:
   monsterPrefabs:
   - {fileID: 6134992789255128151, guid: ed0d3f651c5915348842453a58bebf76, type: 3}
   - {fileID: 7691815932117552104, guid: a35ca08c7b5de3a41944addcbcd69d12, type: 3}
-  - {fileID: 662477974701341446, guid: 620130eeeaef0a34dbcf56251f85fd77, type: 3}
+  - {fileID: 8999600832511676973, guid: 7fb7edf2c7b65ad47a3375732678cd4b, type: 3}
   minSpawnDistance: 1
   maxSpawnDistance: 10
   moveSpeed: 1
