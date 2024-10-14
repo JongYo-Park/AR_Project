@@ -28,9 +28,11 @@ public class SoundManager : MonoBehaviour
         if (bgm.isPlaying)
         {
             bgm.Stop();
+            Debug.Log("BGM stopped.");
         }
         bgm.clip = clip;
         bgm.Play();
+        Debug.Log("Playing BGM: " + clip.name);
     }
 
     public void StopBGM()
