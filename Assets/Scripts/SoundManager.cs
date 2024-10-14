@@ -22,25 +22,31 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+
     public void PlayBGM(AudioClip clip)
     {
+        if (bgm.isPlaying)
+        {
+            bgm.Stop();
+        }
         bgm.clip = clip;
         bgm.Play();
     }
 
     public void StopBGM()
     {
-        if (bgm.isPlaying == false)
-            return;
-
-        bgm.Stop();
+        if (bgm.isPlaying)
+        {
+            bgm.Stop();
+        }
     }
 
     public void PauseBGM()
     {
-        if (bgm.isPlaying == false)
-            return;
-        bgm.Pause();
+        if (bgm.isPlaying)
+        {
+            bgm.Pause();
+        }
     }
 
     public void SetBGM(float volume, float pitch = 1f)
