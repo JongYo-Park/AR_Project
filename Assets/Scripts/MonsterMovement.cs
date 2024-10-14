@@ -28,7 +28,7 @@ public class MonsterMovement : MonoBehaviour
         if (direction != Vector3.zero)
         {
             transform.Translate(direction * speed * Time.deltaTime);
-            
+
             Quaternion lookRotation = Quaternion.LookRotation(direction);
             transform.rotation = lookRotation;
         }

@@ -50,7 +50,6 @@ public class GunShoot : MonoBehaviour {
             {
 				if (hit.collider.CompareTag("Monster"))
 				{
-                    Debug.Log($"코인 획득, 점수 {score} 획득");
                     if (scoreManager != null)
                     {
                         scoreManager.AddScore(score);
@@ -61,11 +60,4 @@ public class GunShoot : MonoBehaviour {
 		}
 	}
 
-	
-
-	void SpawnDecal(RaycastHit hit, GameObject prefab)
-	{
-		GameObject spawnedDecal = GameObject.Instantiate(prefab, hit.point, Quaternion.LookRotation(hit.normal));
-		spawnedDecal.transform.SetParent(hit.collider.transform);
-	}
 }

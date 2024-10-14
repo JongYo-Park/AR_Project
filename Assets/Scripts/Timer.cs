@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
-        time = 10;
+        time = 61;
         StartCoroutine(StartTimer());
     }
 
@@ -36,13 +36,14 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                text.color = Color.white; // 기본 색상으로 되돌리기
+                text.color = Color.white;
             }
 
             yield return null;
         }
 
         curTime = 0;
+        ScoreManager.Instance.SetBestScore();
         SceneManager.LoadScene("EndScene");
     }
 }
