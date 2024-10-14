@@ -64,5 +64,10 @@ public class ScoreManager : MonoBehaviour
     {
         bestScore = PlayerPrefs.GetInt("BestScore", 0);
     }
-    
+    public void ResetBestScore()
+    {
+        bestScore = 0;
+        PlayerPrefs.SetInt("BestScore", bestScore);
+        PlayerPrefs.Save();
+    }
 }
