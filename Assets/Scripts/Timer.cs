@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
 
     private void Awake()
     {
-        time = 10;
+        time = 61;
         StartCoroutine(StartTimer());
     }
 
